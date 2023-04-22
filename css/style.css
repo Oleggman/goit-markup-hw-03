@@ -122,6 +122,10 @@ p {
 |============================
 */
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .main-nav {
   display: flex;
 }
@@ -246,6 +250,12 @@ p {
 
 .team-card {
   background-color: var(--white-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.worker-desc {
+  margin: 32px 44px;
 }
 
 .team .item-title,
@@ -287,12 +297,23 @@ p {
   |============================
 */
 
+.portfolio {
+  padding-top: 0;
+}
+
 .filter {
   display: flex;
   justify-content: center;
+  gap: 24px;
+  margin-top: 168px;
+  margin-bottom: 72px;
 }
 
 .filter-btn {
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+
   color: var(--main-portfolio-filter-cl);
   background-color: var(--main-portfolio-filter-bg-cl);
 }
@@ -307,4 +328,12 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+}
+
+.portfolio-item {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.portfolio-desc {
+  margin: 32px 0;
 }
