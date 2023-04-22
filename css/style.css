@@ -39,8 +39,13 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
-  width: 1128px;
+  width: 1158px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -128,6 +133,7 @@ p {
 
 .main-nav {
   display: flex;
+  align-items: center;
 }
 
 .header > .container {
@@ -141,11 +147,11 @@ p {
 .nav-list {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
 .nav-link {
   display: inline-block;
-  padding: 24px 0;
   font-weight: 500;
   color: var(--secondary-color);
 }
@@ -157,10 +163,7 @@ p {
 .address > .list {
   display: flex;
   align-items: center;
-}
-
-.address-item:not(:last-child) .link {
-  margin-right: 40px;
+  gap: 40px;
 }
 
 .address {
@@ -180,11 +183,10 @@ p {
   padding: 188px 0;
   background-color: var(--secondary-color);
   color: var(--white-color);
-  text-align: center;
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto 48px auto;
 
   font-weight: 700;
@@ -195,9 +197,16 @@ p {
 }
 
 .hero-btn {
-  padding: 16px 32px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  min-width: 169px;
+  height: 56px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /**
@@ -255,7 +264,7 @@ p {
 }
 
 .worker-desc {
-  margin: 32px 44px;
+  padding: 32px 16px;
 }
 
 .team .item-title,
@@ -271,16 +280,13 @@ p {
 */
 
 .footer {
+  padding: 100px 0;
   color: var(--cloud-color);
   background-color: var(--secondary-color);
 }
 
 .footer .site-logo {
-  margin-bottom: 17.5px;
-}
-
-.footer > .container {
-  padding: 100px 0;
+  margin-bottom: 16px;
 }
 
 .footer .logo-span {
