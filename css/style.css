@@ -150,6 +150,10 @@ img {
   gap: 40px;
 }
 
+.nav-item {
+  padding: 24px 0;
+}
+
 .nav-link {
   display: inline-block;
   font-weight: 500;
@@ -304,7 +308,7 @@ img {
 */
 
 .portfolio {
-  padding-top: 0;
+  padding: 96px 0 120px;
 }
 
 .filter {
@@ -326,6 +330,7 @@ img {
 
 .filter-btn:hover,
 .filter-btn:focus {
+  border: 1px solid transparent;
   color: var(--white-color);
   background-color: var(--accent-portfolio-filter-bg-cl);
 }
@@ -333,7 +338,8 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .portfolio-item {
@@ -341,5 +347,6 @@ img {
 }
 
 .portfolio-desc {
-  margin: 32px 0;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
