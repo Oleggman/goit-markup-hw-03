@@ -150,11 +150,8 @@ img {
   gap: 40px;
 }
 
-.nav-item {
-  padding: 24px 0;
-}
-
 .nav-link {
+  padding: 24px 0;
   display: inline-block;
   font-weight: 500;
   color: var(--secondary-color);
@@ -349,4 +346,5 @@ img {
 .portfolio-desc {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
