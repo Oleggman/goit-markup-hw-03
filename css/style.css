@@ -14,6 +14,9 @@
   --main-portfolio-filter-cl: #4d5ae5;
   --main-portfolio-filter-bg-cl: #f4f4fd;
   --accent-portfolio-filter-bg-cl: #404bbf;
+  /* Others */
+  --indent: 24px;
+  --items: 4;
 }
 
 body {
@@ -208,6 +211,25 @@ img {
 
 /**
   |============================
+  | Features
+  |============================
+*/
+
+.features .list {
+  display: flex;
+  gap: var(--indent);
+}
+
+.feature-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+.item-title {
+  margin-bottom: 8px;
+}
+
+/**
+  |============================
   | Works
   |============================
 */
@@ -219,25 +241,12 @@ img {
 .works .list {
   display: flex;
   gap: 24px;
+
+  --items: 3;
 }
 
-/**
-  |============================
-  | Features
-  |============================
-*/
-
-.features .list {
-  display: flex;
-  gap: 24px;
-}
-
-.features-description {
-  width: 264px;
-}
-
-.item-title {
-  margin-bottom: 8px;
+.work-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 /**
@@ -255,6 +264,8 @@ img {
 }
 
 .team-card {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+
   background-color: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -331,12 +342,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+
+  --items: 3;
 }
 
 .portfolio-item {
-  border-bottom: 1px solid #e7e9fc;
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .portfolio-desc {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
